@@ -33,6 +33,8 @@ Example:
 
 On my system, this command will list all the installed fonts that have limited embedding rights.
 
+
+```
 $ find /usr/share/fonts -iname '\*.?tf' -print0 | xargs -0 ttembed -n
 fstype=0008 /usr/share/fonts/google-droid/DroidSansJapanese.ttf
 fstype=0008 /usr/share/fonts/google-droid/DroidSansTamil-Regular.ttf
@@ -61,9 +63,6 @@ fstype=0004 /usr/share/fonts/tlomt-sniglet/Sniglet.ttf
 fstype=0008 /usr/share/fonts/oflb-sportrop/Sportrop.ttf
 fstype=0004 /usr/share/fonts/tlomt-league-gothic/League Gothic.otf
 fstype=0004 /usr/share/fonts/ns-bola/bola.ttf
+```
 
 As all of these fonts are shipped with licences that permit modification, I can then use ttembed to fix them.
-
-Tom7's code doesn't have a version number, so I'll call this one:
-
-Version 1.1

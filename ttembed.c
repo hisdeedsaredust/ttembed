@@ -6,8 +6,6 @@
  *
  * This code was written by Tom Murphy 7, and is public domain. Use at your
  * own risk...
- *
- * Version 1.1
 */
 
 #include <stdio.h>
