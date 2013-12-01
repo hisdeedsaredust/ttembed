@@ -1,0 +1,19 @@
+.TH TTEMBED "1" "2013-12-01"
+.SH NAME
+ttembed \- remove embedding restrictions from TrueType files
+.SH SYNOPSIS
+.B ttembed
+.RI "[" "-n" "] " fontfile
+.SH DESCRIPTION
+.\" Add any additional description here
+.B ttembed
+sets the
+.B fsType
+field of the OS/2 table to zero and recalculates the OS/2 table's
+checksum.
+.SH OPTIONS
+.IP "-n"
+Dry-run mode, which just displays the fsType field and filename
+of the given fonts if it is non-zero (i.e. if
+.B ttembed
+would change it.
