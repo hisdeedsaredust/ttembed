@@ -11,7 +11,7 @@ This version differs in just a few ways:
 
 * Checks that we are modifying a TTF or OTF. You'd have to work quite hard
 to make the original corrupt a non font file but all the same, I'm daft
-enough to just do "ttembed \*" and expect it to work.
+enough to just do "ttembed *" and expect it to work.
 
 * Correctly recalculates the checksum of the OS/2 table. The original
 did a bytewise sum, when it should be a 32-bit-word-wise-sum. Harder to
@@ -35,7 +35,7 @@ On my system, this command will list all the installed fonts that have limited e
 
 
 ```
-$ find /usr/share/fonts -iname '\*.?tf' -print0 | xargs -0 ttembed -n
+$ find /usr/share/fonts -iname '*.?tf' -print0 | xargs -0 ttembed -n
 fstype=0008 /usr/share/fonts/google-droid/DroidSansJapanese.ttf
 fstype=0008 /usr/share/fonts/google-droid/DroidSansTamil-Regular.ttf
 fstype=0008 /usr/share/fonts/google-droid/DroidSansFallback.ttf
@@ -56,9 +56,9 @@ fstype=0008 /usr/share/fonts/thibault/Rockets.ttf
 fstype=0008 /usr/share/fonts/thibault/Isabella.ttf
 fstype=0004 /usr/share/fonts/tlomt-junction/junction.otf
 fstype=0008 /usr/share/fonts/hiran-perizia/Perizia.ttf
-fstype=0008 /usr/share/fonts/opensymbol/opens\_\_\_.ttf
-fstype=0008 /usr/share/fonts/oflb-dignas-handwriting/phranzysko\_-\_Digna\_s\_Handwriting.ttf
-fstype=0004 /usr/share/fonts/ns-tiza-chalk/tiza\_chalk.ttf
+fstype=0008 /usr/share/fonts/opensymbol/opens___.ttf
+fstype=0008 /usr/share/fonts/oflb-dignas-handwriting/phranzysko_-_Digna_s_Handwriting.ttf
+fstype=0004 /usr/share/fonts/ns-tiza-chalk/tiza_chalk.ttf
 fstype=0004 /usr/share/fonts/tlomt-sniglet/Sniglet.ttf
 fstype=0008 /usr/share/fonts/oflb-sportrop/Sportrop.ttf
 fstype=0004 /usr/share/fonts/tlomt-league-gothic/League Gothic.otf
