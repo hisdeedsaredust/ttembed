@@ -1,6 +1,8 @@
 ttembed
 =======
 
+NOTE: Archived 22 December 2022. I have no further interest in this project.
+
 Remove embedding limitations from TrueType fonts, by setting the fsType field
 in the OS/2 table to zero. That's it; this program is a one-trick pony.
 
